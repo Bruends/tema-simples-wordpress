@@ -1,0 +1,68 @@
+//comentarios
+.comments-container{
+  padding: 10px;
+  margin-top: 100px;
+
+  h3{
+    color: $details-color;
+    @include separator;
+    text-align: center;
+  }
+}
+
+.commentlist{
+  list-style: none;
+  max-width: 100%;
+
+  li{
+    border-left: 2px dashed $details-color;
+    padding: 10px;   
+  }
+}
+
+.comment{  
+  margin: 5px 0;
+  img{
+    display: inline-block;
+  }
+
+  a{
+    color: $details-color;
+  }
+}
+
+//respostas
+.comment-respond{
+  margin-top: 50px;
+  padding: 10px;
+}
+
+.comment-form-comment{
+  label{
+    display: block;
+  }
+
+  textarea{
+    margin: 5px 0;       
+    width: 100%;
+  
+    &:focus{
+      outline: solid $details-color;      
+    }
+  }
+}
+
+//botão enviar
+.submit{
+  border: 0;
+  background-color: $details-color;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+
+  &:hover{
+    background-color: darken($details-color , 15%);
+    transition: .5s;
+    cursor: pointer;
+  }
+}

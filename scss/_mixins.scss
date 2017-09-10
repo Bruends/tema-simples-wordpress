@@ -1,0 +1,24 @@
+@mixin flex{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin separator{
+  &::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: $details-color;
+    margin: 10px auto;
+  }
+}
+
+@mixin responsive{
+  @media screen and (max-width: 790px){
+    @content;
+  }
+}

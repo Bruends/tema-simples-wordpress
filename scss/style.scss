@@ -1,0 +1,14 @@
+//cor dos detalhes, menu, footer e etc
+$details-color: #00FFB8;
+
+@import 'mixins';
+@import 'typography';
+@import 'layout';
+@import 'comments';
+
+//---------reset
+*{ margin: 0px; box-sizing: border-box; }
+img{max-width: 100%; display: block;}
+ul{list-style: none;}
+a{text-decoration: none;}
+

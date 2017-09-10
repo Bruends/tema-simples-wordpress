@@ -1,0 +1,77 @@
+$main-font: 'Roboto', Arial ,sans-serif;
+$seg-font: 'Roboto Mono', monospace;
+
+h1,h2,h3,h4{
+  font-family: $seg-font;
+}
+
+p,span,a, li, small{
+  font-family: $main-font;
+}
+
+small{
+  color: #777;
+}
+
+p{
+  font-size: 14pt;
+  line-height: 20pt;  
+}
+
+.logo a{
+  font-size: 26pt;
+}
+
+.banner-bg{
+  font-size: 26pt;
+}
+
+//tags post
+.post-tags{
+  font-family: $main-font;
+  font-weight: 700;
+ 
+  a{
+    font-family: $main-font;
+    color: $details-color;    
+  }
+}
+
+//botão post
+.btn-read-more{
+  font-weight: 700;
+}
+
+//tags aside
+.tags-aside-container{
+  font-weight: 700;
+}
+
+
+.social-container{
+  font-size: 30pt;
+}
+
+//post single.php
+.post-content{
+  line-height: 28pt;
+  font-weight: 300;
+}
+
+//commentarios
+.comment{
+  max-width: 100%;
+
+  a{
+    font-size: 11pt;  
+    
+    &:hover{
+      text-decoration: underline;         
+    }
+  }
+}
+
+.logged-in-as, .logged-in-as a{
+  color: $details-color;
+  font-size: 10pt;
+}
